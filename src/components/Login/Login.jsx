@@ -19,11 +19,23 @@ const Login = () => {
     if (loading) return <Load />;
     return (
         <Container>
-            <Grid container className={styles.wrapper}>
-                <Grid className={styles.form}>
+            <Grid
+                container
+                style={{ height: window.innerHeight - 50 }}
+                alignItems={"center"}
+                justify={"center"}
+                className={styles.wrapper}
+            >
+                <Grid
+                    style={{ width: 400, background: "lightgray" }}
+                    container
+                    alignItems={"center"}
+                    direction={"column"}
+                    className={styles.form}
+                >
                     <Box p={5}>
-                        <Button variant={"outlined"} onClick={login}>
-                            Log in with Google
+                        <Button onClick={login} variant={"outlined"}>
+                            Войти с помощью Google
                         </Button>
                     </Box>
                 </Grid>
