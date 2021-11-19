@@ -1,10 +1,9 @@
 .wrapper {
-    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 50px);
-    /* height: 100vh; */
+    position: relative;
 }
 
 .form {
